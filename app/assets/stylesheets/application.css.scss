@@ -1,11 +1,44 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// body {
+//   background-color: #ff69b4;
+//   height: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 70%;
+// }
+
+.keepcentered {
+  position:    absolute;
+  left:        50%;        /* Start with top left in the center */
+  top:         50%;
+  width:       500px;      /* The fixed width... */
+  height:      200px;      /* ...and height */
+  margin-left: -250px;     /* Shift over half the width */
+  margin-top:  -100px;      /* Shift up half the height */
+  border: 1px solid black; /* Just for demo */
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.button{
+  margin: 52px -70px;
+  position:absolute;
+  top:50%;
+  left:50%;
+}
 
 .container {
   background-color: #ff69b4;
   color: #b20000;
+
 }
+
+.btn {
+  background-color: #b20000
+}
+
 
 .page-header{
 }

@@ -5,12 +5,17 @@ class ValentinesController <ApplicationController
     @valentines = Valentine.all
   end
 
+  def index2
+    @valentines = Valentine.all
+  end
+
   def show
 
   end
 
   def new
   @valentine = Valentine.new
+  end
 
   def create
     @valentine = Valentine.new(valentine_params)
@@ -39,8 +44,7 @@ class ValentinesController <ApplicationController
     end
   end
 
-  private
-
+private
   def set_valentine
     @valentine = Valentine.find(params[:id])
   end
@@ -48,5 +52,4 @@ class ValentinesController <ApplicationController
   def valentine_params
     params.require(:valentine).permit(:title, :message)
   end
-end
 end

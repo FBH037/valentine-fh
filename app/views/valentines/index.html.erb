@@ -1,8 +1,11 @@
 
-<h1 class= "page-header"> Finn's Valentines</h1>
+<h1 class= "page-header text-center"> Finn's Valentines
+</h1>
 <br>
-
-<% @valentines.each do |valentine| %>
+<div class= "button">
+<%= link_to "New Valentine", new_valentine_path, class: "btn btn-danger" %>
+</div>
+<!-- <% @valentines.each do |valentine| %>
 <h4 class= "header"> <%= valentine.title %></h4>
 <p>test</p>
-<%end %>
+<%end %> -->
