@@ -1,6 +1,6 @@
 
-<!-- <div class= "keepcentered"> -->
-<div class= "form-horizontal">
+
+  <div class= "form-horizontal">
 <%= form_for @valentine do |f| %>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :title%>
 <%= f.text_field :title %>&nbsp;&nbsp;
@@ -8,4 +8,5 @@
 <%= f.text_field :message %> <!--text-area-->
 <%= f.submit "Send Valentine!", class: "btn btn-danger button"%>
 <% end %>
+
 </div>

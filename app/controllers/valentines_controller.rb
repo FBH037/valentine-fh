@@ -5,10 +5,6 @@ class ValentinesController <ApplicationController
     @valentines = Valentine.all
   end
 
-  def index2
-    @valentines = Valentine.all
-  end
-
   def show
 
   end
